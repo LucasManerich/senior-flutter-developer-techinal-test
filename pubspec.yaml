@@ -1,0 +1,44 @@
+name: senior_flutter_developer_test
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  dio: ^4.0.6
+  http_query_string: ^1.0.0
+  interactive_chart: ^0.3.4
+  bottom_sheet: ^3.1.2
+  flutter_bloc: ^8.1.1
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/empty-state.png
+    - assets/images/company-logos/BBAS3.png
+    - assets/images/company-logos/ITSA4.png
+    - assets/images/company-logos/ITUB4.png
+    - assets/images/company-logos/LREN3.png
+    - assets/images/company-logos/PETR4.png
+    - assets/images/company-logos/VALE3.png
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700

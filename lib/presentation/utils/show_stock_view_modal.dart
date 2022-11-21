@@ -15,7 +15,6 @@ class ShowStockViewModal {
       initHeight: 0.5,
       maxHeight: 0.95,
       context: context,
-      isModal: true,
       bottomSheetColor: Colors.white,
       builder: _buildBottomSheet,
       anchors: [0, 0.5, 0.95],

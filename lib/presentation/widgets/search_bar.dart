@@ -43,7 +43,7 @@ class SearchBar extends StatelessWidget {
             color: ColorPallete.gray400
           ),
           decoration: const InputDecoration(
-            hintText: "pesquise por um ativo...",
+            hintText: "Pesquise por um ativo...",
             prefixIcon: Icon(Icons.search, color: ColorPallete.gray400, size: 35),
             border: InputBorder.none
           ),

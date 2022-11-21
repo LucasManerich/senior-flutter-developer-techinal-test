@@ -86,29 +86,31 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget get _emptyState {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset('assets/images/empty-state.png'),
-        const Text(
-          'Nenhum ativo favorito :(', 
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w600,
-            color: ColorPallete.gray700
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('assets/images/empty-state.png', width: 200),
+          const Text(
+            'Nenhum ativo favorito :(', 
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w600,
+              color: ColorPallete.gray700
+            )
+          ),
+          const Text(
+            'Utilize a pesquisa para adicionar ações, FIIs, ETFs, etc.', 
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 16,
+              color: ColorPallete.gray500
+            )
           )
-        ),
-        const Text(
-          'Utilize a pesquisa para adicionar ações, FIIs, ETFs, etc.', 
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 16,
-            color: ColorPallete.gray500
-          )
-        )
-      ],
+        ],
+      ),
     );
   }
 }
